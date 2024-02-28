@@ -158,7 +158,7 @@ public class InterfaceMenu extends JFrame {
         // Atualiza a exibição da interface gráfica
         setVisible(true);
 
-        // Pare de editar aqui, para baixo tem metodos de ação dos botões
+        
 
         adicionarButton.addActionListener(new ActionListener() {
             @Override
@@ -344,20 +344,12 @@ public class InterfaceMenu extends JFrame {
         try {
             int percent = 0;
             while (percent <= 100) {
-                // Limpar a tela do console
                 System.out.print("\r");
-
-                // Exibir a porcentagem atual e o símbolo de operação
                 Logs.DetailsNoLn("=================== Iniciando o programa =================== [" + percent + "%] "
                         + operationSymbols[symbolIndex]);
 
-                // Alternar para o próximo símbolo de operação
                 symbolIndex = (symbolIndex + 1) % operationSymbols.length;
-
-                // Aguardar um curto período de tempo para criar a animação
                 Thread.sleep(20);
-
-                // Incrementar a porcentagem
                 percent++;
             }
             Logs.Clear();
@@ -393,8 +385,6 @@ public class InterfaceMenu extends JFrame {
         Musica.iniciar();
         Iniciar();
         Logs.Clear();
-
-        // Array de símbolos de operação para animação
 
     }
 }
