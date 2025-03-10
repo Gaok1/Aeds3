@@ -13,12 +13,12 @@ public class Logs {
     }
 
     public static void Succeed(String Message) {
-        //logsUI.appendLog("[SUCCESS]: " + Message, new Color(0, 200, 0)); // Lighter and brighter green
+        logsUI.appendLog("[SUCCESS]: " + Message, new Color(0, 200, 0)); // Lighter and brighter green
     }
     
 
     public static void Details(String Message) {
-        //logsUI.appendLog("[DETAILS]: " + Message, Color.CYAN);
+        logsUI.appendLog("[DETAILS]: " + Message, Color.CYAN);
     }
 
     public static void DetailsNoLn(String Message) {
